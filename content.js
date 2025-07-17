@@ -10,7 +10,7 @@
       bg: "assets/images/hero-default.jpg"
     },
     intro: {
-      text: "At Naija Caterers, we bring the heart of Nigerian cuisine to your table. From classic jollof to gourmet suya, our passionate chefs deliver unforgettable experiences for every celebration.",
+      text: "Kc's Culinary, we bring the heart of Nigerian cuisine to your table. From classic jollof to gourmet suya, our passionate chefs deliver unforgettable experiences for every celebration.",
       image: "assets/images/intro-default.jpg"
     },
     servicesIntro: "Explore our range of catering services, tailored for every event and taste.",
