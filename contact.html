@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact - Kc's Culinary</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="content.js"></script>
+  <script defer src="forms.js"></script>
+  <script defer src="animations.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="brand">Kc's Culinary</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open Navigation">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="contact-section scroll-animate" data-animate="fade-in">
+      <h1 class="section-title" id="contactTitle"></h1>
+      <div class="contact-content">
+        <div class="contact-info">
+          <p id="contactInfo"></p>
+          <ul class="contact-list" id="contactList"></ul>
+        </div>
+        <form id="contactForm" autocomplete="off" novalidate>
+          <div class="form-group">
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="contactMsg">Message</label>
+            <textarea id="contactMsg" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+      </div>
+      <!-- Modal -->
+      <div class="modal" id="contactModal">
+        <div class="modal-content">
+          <span id="contactModalMsg">Message sent successfully!</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <span id="footerText"></span>
+      <nav class="footer-nav">
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

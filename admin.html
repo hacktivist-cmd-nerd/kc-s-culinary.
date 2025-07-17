@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Dashboard - Nigerian Catering Company</title>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="admin.js"></script>
+  <script defer src="content.js"></script>
+</head>
+<body>
+  <main>
+    <div class="admin-login" id="adminLoginBox">
+      <h1>Admin Login</h1>
+      <form id="adminLoginForm">
+        <input type="password" id="adminPassword" placeholder="Enter admin password" required>
+        <button type="submit">Login</button>
+      </form>
+      <div class="login-error" id="adminLoginError"></div>
+    </div>
+    <div class="admin-dashboard" id="adminDashboard" style="display:none;">
+      <aside class="admin-sidebar">
+        <ul>
+          <li><button class="sidebar-btn" data-section="home">Homepage</button></li>
+          <li><button class="sidebar-btn" data-section="services">Services</button></li>
+          <li><button class="sidebar-btn" data-section="booking">Booking</button></li>
+          <li><button class="sidebar-btn" data-section="contact">Contact</button></li>
+          <li><button class="sidebar-btn" data-section="reset">Reset Content</button></li>
+        </ul>
+      </aside>
+      <section class="admin-content">
+        <div id="adminHomeSection" class="admin-section"></div>
+        <div id="adminServicesSection" class="admin-section" style="display:none;"></div>
+        <div id="adminBookingSection" class="admin-section" style="display:none;"></div>
+        <div id="adminContactSection" class="admin-section" style="display:none;"></div>
+        <div id="adminResetSection" class="admin-section" style="display:none;">
+          <h2>Reset All Content</h2>
+          <button id="resetBtn" class="danger-btn">Reset to Default</button>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
